@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ankit!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div id="hero">
+        <h1>🎉 Happy Birthday, Ankit! 🎉</h1>
+        <p>Let's celebrate your amazing day in style!</p>
+        <button onclick="startCelebration()">Start the Fun 🎈</button>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content" class="hidden">
+        <!-- Confetti Animation -->
+        <div id="confetti"></div>
+
+        <!-- Friendship Timeline -->
+        <section class="timeline">
+            <h2>Our Friendship Journey 🚀</h2>
+            <div class="timeline-item">
+                <h3>First Day We Met</h3>
+                <p>From strangers to friends in no time!</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Epic Moments</h3>
+                <p>Remember the prank war? Unforgettable! 😂</p>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz -->
+        <section class="quiz">
+            <h2>How Well Do You Know Our Friendship? 🤔</h2>
+            <button onclick="startQuiz()">Take the Quiz</button>
+            <p id="quiz-result" class="hidden"></p>
+        </section>
+
+        <!-- Mini Treasure Hunt -->
+        <section class="treasure-hunt">
+            <h2>Find Your Surprise 🎁</h2>
+            <p>Click on the hidden stars to unlock your birthday gift!</p>
+            <div class="star" onclick="revealSurprise('You’ve unlocked a virtual hug! 🤗')">⭐</div>
+            <div class="star" onclick="revealSurprise('A secret message awaits! 📜')">⭐</div>
+            <div class="star" onclick="revealSurprise('You’re the best friend ever! 🌟')">⭐</div>
+        </section>
+
+        <!-- Personalized Message -->
+        <section class="message">
+            <h2>A Special Wish for You 📝</h2>
+            <div id="hidden-message" class="hidden">
+                <p>Dear Ankit,</p>
+                <p>You're more than a friend; you're family. Wishing you all the happiness in the world on your special day. Cheers to many more adventures ahead! 🎉</p>
+            </div>
+            <button onclick="revealMessage()">Reveal My Wish</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>Made with love and laughter by your best friend, Anand. 😊</p>
+    </footer>
+</body>
+</html>
