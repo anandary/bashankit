@@ -1,0 +1,28 @@
+function startCelebration() {
+    document.getElementById('hero').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
+function revealSurprise(message) {
+    alert(message);
+}
+
+function startQuiz() {
+    const questions = [
+        { question: "What is Ankit's favorite hobby?", answer: "Coding" },
+        { question: "What’s the best memory of our friendship?", answer: "Prank war" }
+    ];
+    let score = 0;
+    questions.forEach(q => {
+        let userAnswer = prompt(q.question);
+        if (userAnswer.toLowerCase() === q.answer.toLowerCase()) {
+            score++;
+        }
+    });
+    document.getElementById('quiz-result').textContent = You scored ${score}/${questions.length}!;
+    document.getElementById('quiz-result').style.display = 'block';
+}
+
+function revealMessage() {
+    document.getElementById('hidden-message').style.display = 'block';
+}
